@@ -65,6 +65,7 @@ Application is created using below technologies and tools:
     - Configurations are ready and commented in [`application.properties`].
     - Comment H2 configuration.
     - Uncomment the preferred DB provider configuration and restart the application.
+    - Setup your database username/password
 
 
 

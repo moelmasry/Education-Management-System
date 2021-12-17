@@ -37,7 +37,7 @@ public class AuthExceptionHandler {
 		response.setContentType(MediaType.APPLICATION_JSON_VALUE);
 		response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
 
-		ErrorDto authenticationError = new ErrorDto(HttpStatus.UNAUTHORIZED, exception.getMessage(), exception);
+		ErrorDto authenticationError = new ErrorDto(HttpStatus.UNAUTHORIZED, "JWT signature problem", exception);
 		ObjectMapper objectMapper = new ObjectMapper();
 		
 		objectMapper.registerModule(new JavaTimeModule());

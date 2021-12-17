@@ -25,7 +25,7 @@ public class RestExceptionHandler {
 	// JwtException
 	@ExceptionHandler({ JwtException.class })
 	public ResponseEntity<Object> handleJwtException(Exception ex, WebRequest request) {
-		return buildResponseEntity(new ErrorDto(HttpStatus.UNAUTHORIZED, ex.getMessage(), ex));
+		return buildResponseEntity(new ErrorDto(HttpStatus.UNAUTHORIZED, "JWT authentication problem", ex));
 
 	}
 	//  not Found Exception handler (entity/endpoint) 
