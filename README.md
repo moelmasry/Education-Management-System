@@ -13,23 +13,24 @@
 
 
 ## General info
-Student management system is a spring boot API enable users/students to login, view courses and manage the course registration and export courses schedul as PDF.
+The Student Management System is a spring boot API enables users/students to log in, view courses, and manage the course registration and export courses schedule as PDF.
 
 
 
 ## App Dummy Data
-Application come with ready inserted dummy data as below:
+Application comes with ready inserted dummy data as below:
 * 3 students.
-* 4 system users who can login (3 students + admin)
-* 5 courses avaliable for test.
+* 4 system users who can log in (3 students + admin)
+* 5 courses available for test.
 ## Technologies/Tools
 Application is created using below technologies and tools:
 * JAVA 1.8
 * Springboot V2.6.1 (Maven-based
-* Application is compatable with multable databases
+* Application is compatable with below
 	- H2 in-memory Database (ready to use)
-	- Oracle DB / MSSQL
+	- Oracle 21C / MSSQL 2019
 		* Configuration is ready and commented in [`application.properties`]
+	- Oracle Weblogic 14C (14.1.1.0)
 * LibrePDF/OpenPDF for pdf generation 
 	
 ## API Endpoint
@@ -59,16 +60,16 @@ Application is created using below technologies and tools:
       - username --> sa
       - password -->
     
-        `NOTE: H2 console DB is only accessable as long as application is up and running.`
-* Oracle / MSSQL
+        `NOTE: H2 console DB is only accessible as long as the application is up and running.`
+* Oracle / MSSQL 
     - Configurations are ready and commented in [`application.properties`].
     - Comment H2 configuration.
-    - Uncomment the prefared provider configuration and restart the application.
+    - Uncomment the preferred DB provider configuration and restart the application.
 
 
 
 ## Authentication
-For all APIs, authorization header is mandatory,
+For all APIs, an authorization header is mandatory,
 
 ` 'Authorization: Bearer token-value'`
 
@@ -95,5 +96,5 @@ For all APIs, authorization header is mandatory,
 
 ## Test Cases
 
-Postman tests cases is added to project as [`Students_Management_System-test_cases.postman_collection.json`] file.
+Postman tests cases are added to the project as [`Students_Management_System-test_cases.postman_collection.json`] file.
 
